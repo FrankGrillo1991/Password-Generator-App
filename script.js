@@ -51,7 +51,6 @@ document.querySelector("div.password button").addEventListener(
                         "div.password button").innerHTML = "copy";
                     }, 1000);
         });
-    }
-)
+    });
 
 generate();
