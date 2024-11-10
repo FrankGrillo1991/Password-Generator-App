@@ -20,3 +20,10 @@ div.password {
     border-radius: 10px;
     overflow: hidden;
 }
+
+div.password input {
+    padding: 7px 10px;
+    background-color: #ddd;
+    border: 0;
+    color: #333;
+}
