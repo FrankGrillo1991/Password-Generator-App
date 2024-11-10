@@ -61,3 +61,12 @@ div.options {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
+div.options label {
+    display: block;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
