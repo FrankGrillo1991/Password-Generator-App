@@ -3,13 +3,13 @@ function generate() {
     if (document.getElementById("lowercaseCb").checked) {
         dictionary += "qwertyuiopasdfghjklzxcvbnm";
     }
-    if (document.getElementById("uppercaseDb").checked) {
+    if (document.getElementById("uppercaseCb").checked) {
         dictionary += "QWERTYUIOPASDFGHJKLZXCVBNM"
     }
     if (document.getElementById("digitsCb").checked) {
         dictionary += "1234567890";
     }
-    if (document.getElementById("specialsCb").checked) {
+    if (document.getElementById("specialCb").checked) {
         dictionary += "!@#$%^&*()_+-={}[];<>:"
     }
     const length = document.querySelector('input[type="range"]').value;

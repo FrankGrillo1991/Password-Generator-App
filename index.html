@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple password generator">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
@@ -11,41 +13,47 @@
 <body>
     <h1>Password Generator</h1>
     <div class="generator">
-        <div class="password">
-            <input type="text" value="test" />
-            <button>copy</button>
-        </div>
+            <div class="password">
+                <label for="generatedPassword" class="visually-hidden">Generated password</label>
+                <input type="text" id="generatedPassword" value="test" readonly />
+                <button>copy</button>
+            </div>
         <div class="range">
-            <input type="range" min="4"
-                    max="24" value="8" />
+        <input type="range" min="4"
+            max="24" value="8" aria-label="Password length" />
             <span>8</span>
         </div>
+            <div class="range">
+                <label for="passwordLength" class="visually-hidden">Password length</label>
+                <input type="range" id="passwordLength" min="4" max="24" value="8" />
+                <span>8</span>
+            </div>
         <div class="options">
             <div class="option">
                 <label>
-                <input type="checkbox"
-                        id="lowercaseCb" />
+        <input type="checkbox"
+            id="lowercaseCb" aria-label="Include lowercase letters" />
                 <span>a-z</span>
                 </label>
             </div>
             <div class="option">
                 <label>
-                    <input type="checkbox"
-                            id="uppercaseCb" />
+            <input type="checkbox"
+                id="uppercaseCb" aria-label="Include uppercase letters" />
                     <span>A-Z</span>
                 </label>
             </div>
             <div class="option">
                 <label>
-                    <input type="checkbox"
-                            id="digitsCb" />
+            <input type="checkbox"
+                id="digitsCb" aria-label="Include digits" />
                     <span>0-9</span>
                 </label>
             </div>
             <div class="option">
                 <label>
-                    <input type="checkbox"
-                            id="specialCb" />
+            <input type="checkbox"
+                id="specialCb" aria-label="Include special characters" />
                     <span>!@$#%^</span>
                 </label>
             </div>
