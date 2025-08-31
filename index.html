@@ -15,11 +15,21 @@
             <input type="text" value="test" aria-label="Generated password" />
             <button>copy</button>
         </div>
+            <div class="password">
+                <label for="generatedPassword" class="visually-hidden">Generated password</label>
+                <input type="text" id="generatedPassword" value="test" readonly />
+                <button>copy</button>
+            </div>
         <div class="range">
         <input type="range" min="4"
             max="24" value="8" aria-label="Password length" />
             <span>8</span>
         </div>
+            <div class="range">
+                <label for="passwordLength" class="visually-hidden">Password length</label>
+                <input type="range" id="passwordLength" min="4" max="24" value="8" />
+                <span>8</span>
+            </div>
         <div class="options">
             <div class="option">
                 <label>
