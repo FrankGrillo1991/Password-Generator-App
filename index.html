@@ -12,40 +12,40 @@
     <h1>Password Generator</h1>
     <div class="generator">
         <div class="password">
-            <input type="text" value="test" />
+            <input type="text" value="test" aria-label="Generated password" />
             <button>copy</button>
         </div>
         <div class="range">
-            <input type="range" min="4"
-                    max="24" value="8" />
+        <input type="range" min="4"
+            max="24" value="8" aria-label="Password length" />
             <span>8</span>
         </div>
         <div class="options">
             <div class="option">
                 <label>
-                <input type="checkbox"
-                        id="lowercaseCb" />
+        <input type="checkbox"
+            id="lowercaseCb" aria-label="Include lowercase letters" />
                 <span>a-z</span>
                 </label>
             </div>
             <div class="option">
                 <label>
-                    <input type="checkbox"
-                            id="uppercaseCb" />
+            <input type="checkbox"
+                id="uppercaseCb" aria-label="Include uppercase letters" />
                     <span>A-Z</span>
                 </label>
             </div>
             <div class="option">
                 <label>
-                    <input type="checkbox"
-                            id="digitsCb" />
+            <input type="checkbox"
+                id="digitsCb" aria-label="Include digits" />
                     <span>0-9</span>
                 </label>
             </div>
             <div class="option">
                 <label>
-                    <input type="checkbox"
-                            id="specialCb" />
+            <input type="checkbox"
+                id="specialCb" aria-label="Include special characters" />
                     <span>!@$#%^</span>
                 </label>
             </div>
